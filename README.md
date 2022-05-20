@@ -1,3 +1,3 @@
 # Dotfiles
 
-Dotfiles, to automate my setup on a fresh Arch install.
+Dotfiles, to automate setup on a fresh Arch install.
