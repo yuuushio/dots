@@ -1,2 +1,3 @@
-# dots
-Dotfiles for my Arch linux setup
+# Dotfiles
+
+Dotfiles, to automate my setup on a fresh Arch install.
