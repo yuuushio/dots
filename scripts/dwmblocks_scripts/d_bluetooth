@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+check_connected=`bluetoothctl info 9C:FC:28:2C:DB:0F | grep Connected: | awk '{print $2}'`
+bt_device_name=`bluetoothctl info 9C:FC:28:2C:DB:0F | grep Name: | awk '{print $2}'`
+if [ "$check_connected" = "yes" ]; then
+	printf "^c#ddb6f2^^d^"
+else
+	printf ""
+fi
+
+

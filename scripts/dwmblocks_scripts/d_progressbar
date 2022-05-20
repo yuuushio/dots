@@ -1,0 +1,42 @@
+#!/bin/sh
+
+
+num_bars=10
+
+calc(){ awk "BEGIN { print "$*" }"; }
+perc=100
+is_err=`python ~/.dwm/scripts/is_error.py`
+fin_occ="-"
+fin_rem="-"
+
+if [ $is_err = "true" ]; then
+	echo "$fin_occ$fin_rem"
+else
+	vol=`pamixer --get-volume`
+
+	curr_vol_bars=`calc $vol/$perc*$num_bars`
+
+	remaining_bars=`calc $num_bars-$curr_vol_bars`
+	rdd=`printf "%2.0f" $curr_vol_bars | sed 's/\.[0-9]*$//'`
+
+	rem=`printf "%2.0f" $remaining_bars`
+	rdd=`printf "%d" $rdd`
+	rem=`printf "%d" $rem`
+	if [ $rdd -ge $num_bars ]; then
+		rdd=$num_bars
+	fi
+	#printf '─%.0s' {0..rem_test}
+	fin_occ=`seq 1 $rdd | xargs -I {} printf "─"` # ━
+
+	if [ $rdd -ge $num_bars ]; then
+		fin_rem=""
+	else
+		fin_rem=`seq 1 $rem | xargs -I {} printf "─"`
+	fi
+
+fi
+
+printf "^c#c9cbff^$fin_occ^d^$fin_rem"
+
+
+

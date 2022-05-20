@@ -1,0 +1,4 @@
+#! /bin/bash
+
+left_b="]"
+printf "$left_b"

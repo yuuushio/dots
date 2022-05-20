@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "Polar_a : #2E3440"
+echo "Polar_b : #3B4252"
+echo "Polar_c : #434C5E"
+echo "Polar_d : #4C566A"
+echo "---------------------"
+echo "Snow_a : #D8DEE9"
+echo "Snow_b : #E5E9F0"
+echo "Snow_c : #ECEFF4"
+echo "---------------------"
+echo "Frost_a : #8FBCBB"
+echo "Frost_b : #88C0D0"
+echo "Frost_c : #81A1C1"
+echo "Frost_d : #5E81AC"
+echo "---------------------"
+echo "Aurora_a : #BF616A (Red)"
+echo "Aurora_a : #D08770 (Orange)"
+echo "Aurora_a : #EBCB8B (Yellow)"
+echo "Aurora_a : #A3BE8C (Green)"
+echo "Aurora_a : #B48EAD (Pink)"
+echo "------Addition-------"
+echo "Polar_dark : #242831"
+echo "Faded_Aur_b : #DEA998 (Orange)"
+
+
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+used_norm=`free -m | sed -n '2{p;q}' | awk '{printf ("%2.1fG\n", ($3 / 1024))}'`
+echo "$used_norm"
+

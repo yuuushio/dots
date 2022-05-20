@@ -1,0 +1,5 @@
+#!/bin/bash
+
+used_perc=`free -m | sed -n '2{p;q}' | awk '{printf ("%i\n", ( $3 / 1024 )/($2 / 1024)*100)}'`
+echo "^c#96cdfb^($used_perc%)^d^"
+

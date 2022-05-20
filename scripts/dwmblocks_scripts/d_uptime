@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if ps -Ao comm | grep -q "^Discord\$"; then
+	echo "hehexd"
+fi

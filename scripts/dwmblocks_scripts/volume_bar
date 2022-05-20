@@ -1,0 +1,21 @@
+#!/bin/sh
+
+calc(){ awk "BEGIN { print "$*" }"; }
+num_bars=10
+perc=100
+vol="$(pamixer --get-volume)"
+curr_vol_bars=`calc $vol/$perc*$num_bars`
+remaining_bars=`calc $num_bars-$curr_vol_bars`
+rdd=`printf "%2.0f" $curr_vol_bars | sed 's/\.[0-9]*$//'`
+rem=`printf "%2.0f" $remaining_bars`
+if [ $rdd -gt $num_bars ]; then
+	rdd=$num_bars
+fi
+
+# rdd then rem
+
+
+#echo "^c#ECEFF4^$occupied^c#D8DEE9^$rem_bars"
+printf "─%.0s" {1..$rdd}
+printf "─%.0s" {1..$rem}
+

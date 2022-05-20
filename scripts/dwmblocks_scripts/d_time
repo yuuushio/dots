@@ -1,0 +1,3 @@
+#!/bin/bash
+dt_time=`date '+%b %d (%a) %I:%M%p' | awk '{print $4}'`
+printf "^c#E8A2AF^$dt_time^d^"
