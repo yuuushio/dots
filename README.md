@@ -14,14 +14,14 @@ It will mostly be used to fast track the setup process (with the help of install
 - **Color-scheme:** [Catppuccin](https://github.com/catppuccin/catppuccin)
 
 ### Fonts
-- JetBrainsMono Nerd Font (for terminal, vim, and dwm/bar)
-- Iosevka (for gtk applications)
+- **JetBrainsMono Nerd Font** (for terminal, vim, and dwm/bar)
+- **Iosevka** (for gtk applications)
 
 Both are part of the [Nerd Fonts](https://www.nerdfonts.com/) package.
 
 ## Other
-- [My dwm config](https://github.com/yuuushio/dwm)
-- [My browser startpage](https://github.com/yuuushio/startpage.github.io)
+- My [dwm config](https://github.com/yuuushio/dwm)
+- My [browser startpage](https://github.com/yuuushio/startpage.github.io)
 - [Arch Install Guide/Notes]() - incorporates various installation scripts that install these config files, among other things.
 - GTK theme is the [Nord gtk theme](https://github.com/EliverLara/Nordic) which I edited to integrate Catppuccin color-scheme.
 
