@@ -2,7 +2,7 @@
 
 This repo contains configuration files for my Arch Linux/dwm setup.
 
-It will mostly be used to fast track the setup process, with the help of installation scripts, whenever I do a fresh install of Arch.
+It will mostly be used to fast track the setup process (with the help of installation scripts) whenever I do a fresh install of Arch.
 
 ## Details
 - **WM:** dwm
