@@ -27,7 +27,11 @@ Both are part of the [Nerd Fonts](https://www.nerdfonts.com/) package.
 - Pipewire and bluetooth conf are part of installation script so I don't have to manually edit them.
 
 ## Preview
-<img src="assets/a.png" width="600" />
+<img src="assets/a.png" width="700" />
+
+<img src="assets/b.png" width="700" />
+
+<img src="assets/c.png" width="700" />
 
 ## TODO
 - Rofi rice
