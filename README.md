@@ -6,12 +6,12 @@ It will mostly be used to fast track the setup process, with the help of install
 
 ## Details
 
-- **WM: ** dwm
-- **OS: ** Arch Linux
-- **Terminal: ** ST
-- **Editor: ** Neovim w/ [nvchad config](https://nvchad.github.io/)
-- **File Manager: ** Thunar
-- **Compositor: ** [Picom](https://github.com/jonaburg/picom)
+- **WM:** dwm
+- **OS:** Arch Linux
+- **Terminal:** ST
+- **Editor:** Neovim w/ [nvchad config](https://nvchad.github.io/)
+- **File Manager:** Thunar
+- **Compositor:** [Picom](https://github.com/jonaburg/picom)
 
 ## Other
 - [My dwm config]()
