@@ -1,0 +1,67 @@
+#!/bin/bash
+
+f=3 b=4
+for j in f b; do
+  for i in {0..7}; do
+    printf -v $j$i %b "\e[${!j}${i}m"
+  done
+done
+d=$'\e[1m'
+t=$'\e[0m'
+v=$'\e[7m'
+
+# Coloured dots inspiration/credits - elenapan @ github
+sep=
+s=
+
+w=os
+osname="$(( lsb_release -ds || cat /etc/*release || uname -om ) 2>/dev/null | head -n1 | cut -d'"' -f 2)"
+
+h=wm
+wmname="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
+
+k=mem
+memusage="$(free -m | awk 'NR==2{printf "%sM / %sM", $3,$2 }')"
+
+sh=sh
+shell=$(basename $SHELL)
+
+# (\ /)
+# ( · ·)
+# c(")(")
+
+
+b4=$(printf "\x1b[38;2;87;82;104m")
+rd=$(printf "\x1b[38;2;208;143;173m")
+gr=$(printf "\x1b[38;2;171;233;179m")
+bl=$(printf "\x1b[38;2;150;205;251m")
+yl=$(printf "\x1b[38;2;250;227;176m")
+wt=$(printf "\x1b[38;2;217;224;238m")
+tl=$(printf "\x1b[38;2;181;232;224m")
+lv=$(printf "\x1b[38;2;201;203;255m")
+
+
+tput clear
+
+cat << EOF
+
+ ${lv}       ,-     
+       ;      
+   .__\"/__.     $b4$w   ${lv}$t  $b4[ $tl$osname $b4]$t
+${lv}  ( $b4$t  $rd.$t  ${gr}.${yl}:${t}${lv})    $d$b4$h   ${lv}$t  $b4[ $tl$wmname $b4]$t
+${lv}  |   $b4(${wt}o$b4)$t  ${bl}'${t}${lv}|    $b4$sh   ${lv}$t  $b4[ $tl$shell $b4]$t
+${lv}  \_/     \_/    $b4$k  ${lv}$t  $b4[ $tl$memusage $b4]$t
+   
+ 				 $f0$s$f0$s$t $f1$s$f1$s$t $f2$s$f2$s$t $f3$s$f3$s$t
+ 				 $f4$s$f4$s$t $f5$s$f5$s$t $f6$s$f6$s$t $f7$s$f7$s$t
+ 				 
+EOF
+
+#cat << EOF
+#              $f4$w  ~  $t$osname
+#   (\ /)      $d$f1$h  ~  $t$wmname
+#   ( $d. .$t)     $f2$sh  ~  $t$shell
+#   c($f3"$t)($f3"$t)    $f3$k ~  $t$memusage
+#
+#EOF
+
