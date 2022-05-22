@@ -12,6 +12,7 @@ It will mostly be used to fast track the setup process (with the help of install
 - **File Manager:** Thunar
 - **Compositor:** [Picom](https://github.com/jonaburg/picom)
 - **Color-scheme:** [Catppuccin](https://github.com/catppuccin/catppuccin)
+- **Icons:** Bibata/Nordzy (mouse); Tela-black (folders/icons)
 
 ### Fonts
 - **JetBrainsMono Nerd Font** (for terminal, vim, and dwm/bar)
