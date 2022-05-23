@@ -23,7 +23,7 @@ Both are part of the [Nerd Fonts](https://www.nerdfonts.com/) package.
 ## Other
 - My [dwm config](https://github.com/yuuushio/dwm)
 - My [browser startpage](https://github.com/yuuushio/startpage.github.io)
-- [Arch Install Guide/Notes]() - incorporates various installation scripts that install these config files, among other things.
+- [Arch Install Guide/Notes](https://github.com/yuuushio/arch-install) - incorporates various installation scripts that install these config files, among other things.
 - GTK theme is the [Nord gtk theme](https://github.com/EliverLara/Nordic) which I edited to integrate Catppuccin color-scheme.
 - Pipewire and bluetooth conf are part of installation script so I don't have to manually edit them.
 
