@@ -114,4 +114,14 @@ alias dt="~/Desktop"
 
 export PATH=""$PATH:~/.local/bin/""
 
+alias ca="conda activate de"
+
+export SPARK_HOME=/opt/spark-3.2.1
+export PATH=$SPARK_HOME/bin:$PATH
+export PYSPARK_PYTHON=python3
+export PYSPARK_DRIVER_PYTHON=jupyter
+export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
+
+export JAVA_HOME=/usr/lib/jvm/java-18-jdk
+
 
