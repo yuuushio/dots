@@ -1,0 +1,11 @@
+--vim.opt.number = false
+vim.g.AutoPairsQuoteClosingChar = {'"', "'",'`', "```", "*", "*", "*"}
+vim.g.AutoPairsNextCharWhitelist = {'.', ','}
+vim.opt.scrolloff = 9
+vim.opt.smarttab = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
