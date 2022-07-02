@@ -132,7 +132,7 @@ static const char *colorname[] = {
 	/* 8 normal colors */
 	"#6E6C7E",
 	"#F28FAD",
-	"#ABE9B3",
+	"#eba0ac",
 	"#FAE3B0",
 	"#96CDFB",
 	"#F5C2E7",
@@ -151,8 +151,8 @@ static const char *colorname[] = {
 
 
 
-[256] = "#988BA2", /* default foreground colour */
-[257] = "#1E1E2E", /* default background colour */
+[256] = "#89dceb", /* default foreground colour */
+[257] = "#181825", /* default background colour */
 [258] = "#C3BAC6", /*575268*/
 
 };
@@ -292,8 +292,8 @@ static Shortcut shortcuts[] = {
   { MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
   { MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
   { MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
-  { MODKEY,               XK_u,           kscrollup,      {.i = -1} },
-  { MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
+  //{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
+  //{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
   { MODKEY,		XK_s,		changealpha,	{.f = -0.05} },
   { MODKEY,		XK_a,		changealpha,	{.f = +0.05} },
   { MODKEY,		XK_m,		changealpha,	{.f = +2.00} },
